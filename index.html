@@ -1,207 +1,136 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidrería La Unión</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #0f2a44;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+    }
+
+    nav {
+      background-color: #1f3f5b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0f2a44;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .contact {
+      background-color: #e9ecef;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #0f2a44;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
   </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="es"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Vidrería La Unión&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, Helvetica, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #f5f5f5;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #0f2a44;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #1f4f7a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 60px 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 36px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.section {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.section h3 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #0f2a44;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services ul {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.services li {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.gallery {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.gallery img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.gallery figcaption {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.contact {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.whatsapp {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px 25px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #25d366;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #0f2a44;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div style="display:flex;align-items:center;gap:12px;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="width:48px;height:48px;border:2px solid #fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:bold;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>VL</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Vidrería La Unión&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#servicios"&gt;Servicios&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#galeria"&gt;Galería&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="hero" id="inicio"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Soluciones en vidrio para tu hogar y negocio&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Calidad, experiencia y atención profesional&lt;/p&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="section" id="servicios"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h3&gt;Nuestros Servicios&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="services"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;✔ Vidrio templado&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;✔ Ventanas y puertas de vidrio&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;✔ Canceles para baño&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;✔ Espejos a medida&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;✔ Instalación profesional&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="section" id="galeria"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h3&gt;Galería de Trabajos&lt;/h3&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;figure&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="570FA865-AF0F-4318-9E13-BBDB27E1F474.jpeg" alt="Vitrina de vidrio"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;figcaption&gt;Vitrina de vidrio&lt;/figcaption&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/figure&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;figure&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="17B0921B-61D4-4B95-B025-B4E42E324706.jpeg" alt="Ventanas corredizas"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;figcaption&gt;Ventanas corredizas&lt;/figcaption&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/figure&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;figure&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="EDE92789-2EF5-442A-800E-F316EE5DE153.jpeg" alt="Puerta con vidrio"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;figcaption&gt;Puerta con vidrio&lt;/figcaption&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/figure&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;figure&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="48687805-C35E-4525-B837-4D2400B16F62.jpeg" alt="Ventana arqueada"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;figcaption&gt;Ventana arqueada&lt;/figcaption&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/figure&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="section contact" id="contacto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h3&gt;Contáctanos&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;📍 Guatemala&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;📞 Teléfono: +502 5629-4048&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;📱 WhatsApp: +502 4512-9070&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;a class="whatsapp" href="https://wa.me/50245129070" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>Cotiza sin compromiso por WhatsApp</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/a&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>© 2026 Vidrería La Unión · Todos los derechos reservados</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+  <h1>Vidrería La Unión</h1>
+  <p>Calidad y experiencia en vidrio y aluminio</p>
+</header>
+
+<nav>
+  <a href="#servicios">Servicios</a>
+  <a href="#galeria">Galería</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <p>Fabricación e instalación de puertas, ventanas, canceles de baño, vitrinas, espejos y trabajos en aluminio y vidrio a la medida.</p>
+</section>
+
+<section id="galeria">
+  <h2>Galería de trabajos</h2>
+  <div class="gallery">
+    <img src="570FA865-AF0F-4318-9E13-BBDB27E1F474.jpeg">
+    <img src="17B0921B-61D4-4B95-B025-B4E42E324706.jpeg">
+    <img src="EDE92789-2EF5-442A-800E-F316EE5DE153.jpeg">
+    <img src="48687805-C35E-4525-B837-4D2400B16F62.jpeg">
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <p><strong>WhatsApp:</strong> +502 4512 9070</p>
+  <p><strong>Teléfono:</strong> +502 5629 4048</p>
+  <a class="whatsapp" href="https://wa.me/50245129070" target="_blank">
+    Contactar por WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Vidrería La Unión | Guatemala</p>
+</footer>
+
 </body>
 </html>
